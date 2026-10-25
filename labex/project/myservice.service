@@ -1,0 +1,10 @@
+[Unit]
+Description=My Custom Service
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c "while true; do echo 'Running my service'; sleep 10; done"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

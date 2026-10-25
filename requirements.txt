@@ -1,0 +1,5 @@
+# Kernel for running the notebooks (VS Code or Jupyter), pinned to the version used in .venv
+ipykernel==7.4.0
+
+# Only needed to open the notebooks in a browser instead of VS Code
+notebook

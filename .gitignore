@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*:Zone.Identifier
+
+# practice artifacts
+archive.tar.gz
+binary_file.bin
+cpu_intensive.py
+
+# copyrighted reference book
+books/Linux in a Nutshell*.pdf
+
+# local Claude Code settings
+.claude/settings.local.json
