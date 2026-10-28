@@ -1,6 +1,6 @@
 # Linux Tutor — Progress Tracker
 
-Last updated: 2026-10-20
+Last updated: 2026-10-28
 
 This file tracks curriculum progress against the pillars defined in `CLAUDE.md`. Status for Pillar 6 is based on direct session history (verified). Status for Pillars 1-5 is inferred from notebook filenames only — I have not re-read their content in this session, so topic lists there are a best guess, not a verified audit. Flag it if you want those reviewed properly before trusting the detail.
 
@@ -73,7 +73,7 @@ Files present: `cron-crontab-systemctl.ipynb`, `journalctl.ipynb`, `nice-renice.
 - Notes: `IP-Address.ipynb`, `IP-Internet-Protocol.ipynb`, `IP-Subnet-Mask.ipynb`, `MAC-Address.ipynb` (your own notes), plus `IP-Subnet-Mask-CIDR.ipynb` and `IP-Subnetting.ipynb` (tutor-written lessons).
 - `IP-Subnetting.ipynb` teaches the fixed method for reading any `IP/N`: interesting octet → block size → network start → broadcast → usable hosts, with worked examples (`172.30.240.133/20`, `192.168.10.77/26`, `172.16.37.9/19`), subnet-splitting, nesting ("subnet is relative"), and a Python `ipaddress` checker.
 - Corrections given: `IP/N` is a *host* in a network (network address = host bits zero); each extra mask bit doubles subnets and halves size; zeros = network address, ones = broadcast.
-- **Open exercises (unanswered):** `IP-Subnetting.ipynb` TRY YOURSELF (7 questions) and `IP-Subnet-Mask-CIDR.ipynb` section 6 (4 questions). Send answers in a future session for checking.
+- **Exercises done and graded (2026-10-28):** `IP-Subnetting.ipynb` TRY YOURSELF Q2–Q7 plus 3 extra drill problems (all correct by the end). Recurring slip to watch: reusing a block size from a previous question instead of deriving it from the mask given (Q4, Q7). Q1 was not graded in chat. `IP-Subnet-Mask-CIDR.ipynb` section 6 (4 questions) still unanswered.
 - The `Checklist` cell in `11ticket-scenario1.ipynb` is a blank template; filling it in for this ticket as a worked example is optional.
 
 ### Not yet covered (remaining curriculum items for Pillar 6)
