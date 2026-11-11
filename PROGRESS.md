@@ -1,6 +1,6 @@
 # Linux Tutor — Progress Tracker
 
-Last updated: 2026-10-28
+Last updated: 2026-11-11
 
 This file tracks curriculum progress against the pillars defined in `CLAUDE.md`. Status for Pillar 6 is based on direct session history (verified). Status for Pillars 1-5 is inferred from notebook filenames only — I have not re-read their content in this session, so topic lists there are a best guess, not a verified audit. Flag it if you want those reviewed properly before trusting the detail.
 
@@ -73,7 +73,7 @@ Files present: `cron-crontab-systemctl.ipynb`, `journalctl.ipynb`, `nice-renice.
 - Notes: `IP-Address.ipynb`, `IP-Internet-Protocol.ipynb`, `IP-Subnet-Mask.ipynb`, `MAC-Address.ipynb` (your own notes), plus `IP-Subnet-Mask-CIDR.ipynb` and `IP-Subnetting.ipynb` (tutor-written lessons).
 - `IP-Subnetting.ipynb` teaches the fixed method for reading any `IP/N`: interesting octet → block size → network start → broadcast → usable hosts, with worked examples (`172.30.240.133/20`, `192.168.10.77/26`, `172.16.37.9/19`), subnet-splitting, nesting ("subnet is relative"), and a Python `ipaddress` checker.
 - Corrections given: `IP/N` is a *host* in a network (network address = host bits zero); each extra mask bit doubles subnets and halves size; zeros = network address, ones = broadcast.
-- **Exercises done and graded (2026-10-28):** `IP-Subnetting.ipynb` TRY YOURSELF Q2–Q7 plus 3 extra drill problems (all correct by the end). Recurring slip to watch: reusing a block size from a previous question instead of deriving it from the mask given (Q4, Q7). Q1 was not graded in chat. `IP-Subnet-Mask-CIDR.ipynb` section 6 (4 questions) still unanswered.
+- **Exercises done and graded (2026-10-28):** `IP-Subnetting.ipynb` TRY YOURSELF Q2–Q7 plus 3 extra drill problems (all correct by the end). Recurring slip to watch: reusing a block size from a previous question instead of deriving it from the mask given (Q4, Q7). Q1 was not graded in chat. `IP-Subnet-Mask-CIDR.ipynb` section 6 (4 questions) answered and graded; Q4 needed a second pass on **nesting** (a bigger block contains smaller ones; two blocks are either nested or separate, never half-overlapping), now understood. Subnetting is closed.
 - The `Checklist` cell in `11ticket-scenario1.ipynb` is a blank template; filling it in for this ticket as a worked example is optional.
 
 ### Not yet covered (remaining curriculum items for Pillar 6)
@@ -100,3 +100,4 @@ Files present: `cron-crontab-systemctl.ipynb`, `journalctl.ipynb`, `nice-renice.
 - New this period: a reusable **ticket checklist** (intake → diagnosis path → resolution) lives at the bottom of `11ticket-scenario1.ipynb`. Plan: copy it per ticket of that type, and consider making a similar one per ticket group (e.g. "service won't start", "disk full", "permission denied") as those pillars get scenario work.
 - Recurring habits to keep drilling: copy-paste names instead of retyping (the `dbo1` typo); separate ticket facts from assumptions; read the SOA before concluding on NXDOMAIN; check refused-vs-timeout by message *and* elapsed time (`time nc ...`).
 - Video follow-ups already suggested (do after hands-on, not before): freeCodeCamp *TCP Flags & Handshake — 9:40:48*, *DNS Hierarchy & Queries — 11:57:10*, *IPv4 Logical Addressing — 48:09*, *Classful vs. Classless (CIDR) — 55:17*, and *Subnetting & Borrowing Bits — 2:15:55* for the subnetting depth.
+- Book companion: `books/networking_for_dummies_reading_plan.md` maps Networking For Dummies (11th ed.) onto the curriculum. Current reading block: Pillar 6 consolidation (Ch 1 pp. 8-14, Ch 5 pp. 69-81 and 89-91, Ch 6 pp. 96-97 and 109-111, Ch 17 pp. 264-270 and 278). Book is Windows-oriented and teaches classful addressing; trust the terminal and the classless method. Reading status: not yet reported as done.
